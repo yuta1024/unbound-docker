@@ -1,5 +1,5 @@
 FROM alpine:3.19 AS builder
-ARG UNBOUND_VERSION=1.22.0
+ARG UNBOUND_VERSION=1.23.0
 
 WORKDIR /build
 RUN apk add curl build-base openssl-dev openssl-libs-static expat-dev expat-static libevent-dev libevent-static protobuf-c-dev protobuf-c-compiler && \
