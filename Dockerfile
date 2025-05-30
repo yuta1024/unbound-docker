@@ -1,4 +1,4 @@
-FROM alpine:3.19 as builder
+FROM alpine:3.19 AS builder
 ARG UNBOUND_VERSION=1.22.0
 
 WORKDIR /build
