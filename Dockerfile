@@ -1,4 +1,4 @@
-FROM alpine:3.19 AS builder
+FROM alpine:3.24 AS builder
 ARG UNBOUND_VERSION=1.26.0
 
 WORKDIR /build
@@ -25,7 +25,7 @@ RUN apk add curl build-base openssl-dev openssl-libs-static expat-dev expat-stat
     make install
 
 
-FROM alpine:3.19
+FROM alpine:3.24
 
 WORKDIR /etc/unbound
 
